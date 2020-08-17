@@ -440,7 +440,7 @@
         <form class="form" autocomplete="off">
           <ul class="modal__list list">
             <li class="modal__list--item">
-              <label class="modal__label" for="name">
+              <label class="modal__label">
                 <svg class="modal__label--icon" width="12" height="12">
                   <use href="./img/symbol-defs.svg#icon-person-black"></use>
                 </svg>
@@ -454,7 +454,7 @@
               </label>
             </li>
             <li class="modal__list--item">
-              <label class="modal__label" for="tel">
+              <label class="modal__label">
                 <svg class="modal__label--icon" width="12" height="12">
                   <use href="./img/symbol-defs.svg#icon-phone-black"></use>
                 </svg>
@@ -468,7 +468,7 @@
               </label>
             </li>
             <li class="modal__list--item">
-              <label class="modal__label" for="email">
+              <label class="modal__label">
                 <svg class="modal__label--icon" width="12" height="12">
                   <use href="./img/symbol-defs.svg#icon-email-black"></use>
                 </svg>
@@ -482,7 +482,7 @@
               </label>
             </li>
             <li class="modal__list--item">
-              <label class="modal__label" for="comment">
+              <label class="modal__label">
                 <textarea
                   class="modal__comment"
                   type="text"
@@ -491,10 +491,12 @@
               >
             </li>
             <li class="modal__list--item modal__checkbox">
-              <input type="checkbox" name="checkbox" /><label for="checkbox"
-                >Соглашаюсь с рассылкой и принимаю
-                <a class="modal__link" href="">Условия договора</a></label
-              >
+              <label class="modal__label">
+              <input class="checkbox" type="checkbox" name="checkbox" /><span class="modal__checkbox--icon"></span>
+              </svg>Соглашаюсь с рассылкой и принимаю
+                <a class="modal__link" href="">Условия договора</a>
+                
+                </label>
             </li>
           </ul>
         </form>
