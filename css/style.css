@@ -833,6 +833,7 @@ img {
 
 .modal__label--text {
   position: absolute;
+  display: block;
   left: 42px;
   top: 50%;
   font-size: 16px;
@@ -841,7 +842,7 @@ img {
 }
 
 .modal__label:focus-within .modal__label--text {
-  transform: translate(-23px, -40px);
+  transform: translate(-23px, calc(-50% - 29px));
   color: var(--accent-text-color);
 }
 
@@ -850,7 +851,7 @@ img {
 }
 
 .modal__label--input:not(:placeholder-shown) + .modal__label--text {
-  transform: translate(-23px, -40px);
+  transform: translate(-23px, calc(-50% - 29px));
   color: var(--accent-text-color);
 }
 
@@ -867,12 +868,12 @@ img {
 }
 
 .modal__label:focus-within .modal__comment--text {
-  transform: translateY(-40px);
+  transform: translateY(-30px);
   color: var(--accent-text-color);
 }
 
 .modal__comment:not(:placeholder-shown) + .modal__comment--text {
-  transform: translateY(-40px);
+  transform: translateY(-30px);
   color: var(--accent-text-color);
 }
 
@@ -925,6 +926,8 @@ input[type='checkbox'] {
 .modal__comment {
   padding: 12px 16px;
   height: 120px;
+  width: 100%;
+  resize: none;
 }
 
 .modal__list {
