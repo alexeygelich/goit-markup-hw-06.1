@@ -437,37 +437,56 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
-        <form action="">
+        <form class="form" autocomplete="off">
           <ul class="modal__list list">
             <li class="modal__list--item">
-              <input type="text" name="name" />
-              <label for="name">
-                <svg width="12" height="12">
+              <label class="modal__label" for="name">
+                <svg class="modal__label--icon" width="12" height="12">
                   <use href="./img/symbol-defs.svg#icon-person-black"></use>
                 </svg>
-                Имя
+                <input
+                  class="modal__label--input"
+                  type="text"
+                  name="name"
+                  placeholder=" "
+                />
+                <span class="modal__label--text">Имя</span>
               </label>
             </li>
             <li class="modal__list--item">
-              <input type="text" name="phone" /><label for="phone">
-                <svg width="13" height="13">
+              <label class="modal__label" for="tel">
+                <svg class="modal__label--icon" width="12" height="12">
                   <use href="./img/symbol-defs.svg#icon-phone-black"></use>
                 </svg>
-                Телефон</label
-              >
+                <input
+                  class="modal__label--input"
+                  type="tel"
+                  name="tel"
+                  placeholder=" "
+                />
+                <span class="modal__label--text">Телефон</span>
+              </label>
             </li>
             <li class="modal__list--item">
-              <input type="text" name="mail" /><label for="mail">
-                <svg width="15" height="12">
+              <label class="modal__label" for="email">
+                <svg class="modal__label--icon" width="12" height="12">
                   <use href="./img/symbol-defs.svg#icon-email-black"></use>
                 </svg>
-                Почта</label
-              >
+                <input
+                  class="modal__label--input"
+                  type="email"
+                  name="email"
+                  placeholder=" "
+                />
+                <span class="modal__label--text">Почта</span>
+              </label>
             </li>
             <li class="modal__list--item">
-              <input class="modal__comment" type="text" name="comment" /><label
-                for="comment"
-                >Комментарий</label
+              <label class="modal__label" for="comment">
+                <input class="modal__comment" type="text" name="comment" /><span
+                  class="modal__comment--text"
+                  >Комментарий</span
+                ></label
               >
             </li>
             <li class="modal__list--item modal__checkbox">
